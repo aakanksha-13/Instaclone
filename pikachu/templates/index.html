@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+       .red-text {
+       color: red;
+       }
+       .smaller-image {
+       width: 100px;
+       }
+       .thick-brown-border {
+         border-color: green;
+         border-width: 5px;
+         border-style: solid;
+         border-radius: 50%;}
+      h1{
+      font-family: Lobster, Monospace;
+      }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+            <h1 class="red-text"> Instagram Clone </h1>
+            <img class="smaller-image thick-brown-border" src="https://bit.ly/fcc-relaxing-cat" alt="Author standing on a beach with two thumbs up. ">
+            <h3>Sign Up</h3>
+            <h4>{{today}}</h4>
+
+    </div>
+  <form method="post">
+      {% csrf_token %}
+       <div>
+           <label for="username">Username: </label>
+           <input id="username" type="text" name="username" value="">
+       </div>
+
+       <div>
+           <label for="name">Name: </label>
+           <input id="name" type="text" name="name" value="">
+       </div>
+
+       <div>
+           <label for="email">Email: </label>
+           <input id="email" type="text" name="email" value="">
+       </div>
+
+       <div>
+           <label for="password">Password: </label>
+           <input id="password" type="password" name="password" value="">
+       </div>
+           <input type="submit" value="Sign Up">
+        <a href="login/" </a>
+      <button type="button" onclick=<a href="login/" </a>Login</button>
+
+</form>
+
+</body>
+</html>
